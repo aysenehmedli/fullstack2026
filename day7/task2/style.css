@@ -1,0 +1,34 @@
+
+
+.card1{
+background-image: url(https://images.pexels.com/photos/38877042/pexels-photo-38877042.jpeg);
+width: 500px;
+height: 600px;
+background-size: cover;
+color: green;
+font-weight: 700;
+}
+.card2{
+background-image: url(https://images.pexels.com/photos/33521202/pexels-photo-33521202.jpeg);
+width: 500px;
+height: 600px;
+background-size: cover;
+color: azure;
+font-weight: 700;
+
+}
+.card3{
+background-image: url(https://images.pexels.com/photos/7048472/pexels-photo-7048472.jpeg);
+width: 500px;
+height: 600px;
+background-size: cover;
+color: #012236;
+font-weight: 700;
+
+}
+.umumi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

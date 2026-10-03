@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 150vh;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    .ellipse1 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    .ellipse2 {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    .ellipse3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+    }
+}
+
+header {
+    width: 92%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .signbutton {
+        width: 78px;
+        height: 25px;
+        padding: 4px 14px;
+        border: 1px solid #FFFFFF;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 1s ease, box-shadow 1s ease, border-color 1s ease;
+
+    }
+
+    .signbutton:hover {
+        background-color: rgba(115, 158, 237, 0.85);
+        border: none;
+    }
+}
+
+main {
+    width: 90%;
+
+    .hero {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        margin-bottom: 100px;
+
+        .information {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+
+            h1 {
+                width: 500px;
+                font-size: 48px;
+                color: #fff;
+
+                span {
+                    color: #98A2E5;
+
+                }
+            }
+
+            p {
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+                width: 85%;
+                margin-bottom: 10px;
+
+            }
+
+            button {
+                width: 88px;
+                height: 25px;
+                border-radius: 6px;
+                border: 1px solid #FFFFFF;
+                background-color: transparent;
+                font-size: 14px;
+                color: #fff;
+
+            }
+        }
+
+        .robot {
+            position: absolute;
+            right: 0;
+        }
+
+        .ellipse4 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .ellipse5 {
+            position: absolute;
+            top: 0;
+            right: 500px;
+        }
+
+        .ellipse6 {
+            position: absolute;
+            top: 70px;
+            right: 600px;
+        }
+
+        .ellipse7 {
+            position: absolute;
+            bottom: 70px;
+            right: 500px;
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .cards {
+            width: 70%;
+            backdrop-filter: blur(30px);
+            background-color: rgba(128, 128, 128, 0.112);
+            border-radius: 20px;
+            padding: 15px 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            .card {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                background: #3e3c3c78;
+                
+                color: #fff;
+                text-align: center;
+                border-radius: 20px;
+
+                i{
+                    font-size: 30px;
+                }
+                p{
+                    width: 60%;
+                    font-size: 15px
+                }
+              
+            }
+        }
+    }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Alış-veriş siyahısı <svg xmlns="http://www.w3.org/2000/svg" width="1.13em" height="1em" viewBox="0 0 27 24">
+	<path d="M0 0h27v24H0z" fill="none" />
+	<path fill="currentColor" d="M25.714 10.286h.027c.465 0 .885.192 1.185.502c.31.301.502.721.502 1.186v.028v-.001v.027c0 .465-.192.885-.502 1.185c-.301.31-.721.502-1.186.502h-.028h.001h-.201l-1.541 8.869a1.66 1.66 0 0 1-.587 1.015l-.003.002c-.29.249-.67.401-1.085.401H5.129c-.415 0-.795-.152-1.087-.403l.002.002a1.65 1.65 0 0 1-.588-1.008l-.001-.01l-1.541-8.869h-.228c-.465 0-.885-.192-1.185-.502a1.65 1.65 0 0 1-.502-1.186v-.054c0-.465.192-.885.502-1.185c.301-.31.721-.502 1.186-.502h.028h-.001zM6.491 21a.82.82 0 0 0 .581-.3l.001-.001a.82.82 0 0 0 .208-.626v.003l-.429-5.572a.82.82 0 0 0-.3-.581l-.001-.001a.82.82 0 0 0-.626-.208h.003a.82.82 0 0 0-.581.3l-.001.001a.82.82 0 0 0-.208.626v-.003l.429 5.572a.83.83 0 0 0 .274.562l.001.001a.83.83 0 0 0 .572.228h.011h-.001zm5.505-.856v-5.58a.82.82 0 0 0-.254-.594a.82.82 0 0 0-.595-.254h-.016a.82.82 0 0 0-.594.254a.82.82 0 0 0-.254.595v5.588c0 .234.097.445.254.594a.82.82 0 0 0 .595.254h.016a.82.82 0 0 0 .594-.254a.82.82 0 0 0 .258-.598v-.006zm5.143 0v-5.58a.82.82 0 0 0-.254-.594a.82.82 0 0 0-.595-.254h-.016a.82.82 0 0 0-.594.254a.82.82 0 0 0-.254.595v5.588c0 .234.097.445.254.594a.82.82 0 0 0 .595.254h.016a.82.82 0 0 0 .594-.254a.82.82 0 0 0 .258-.598v-.006zm4.714.066l.429-5.572a.83.83 0 0 0-.208-.624l.001.001a.83.83 0 0 0-.58-.302h-.003a.83.83 0 0 0-.624.208l.001-.001a.83.83 0 0 0-.302.58v.003l-.429 5.572a.83.83 0 0 0 .208.624l-.001-.001a.83.83 0 0 0 .58.302h.08a.83.83 0 0 0 .573-.228a.83.83 0 0 0 .279-.564v-.003zM6.375 3.91L5.13 9.428H3.362l1.352-5.906c.163-.785.59-1.45 1.182-1.915l.007-.005A3.33 3.33 0 0 1 8.01.858h.038h-.002h2.236V.85c0-.234.097-.445.254-.594a.82.82 0 0 1 .596-.255h5.162c.234 0 .445.097.594.254a.82.82 0 0 1 .254.595v.008h2.273c.801 0 1.536.28 2.112.748l-.006-.005A3.26 3.26 0 0 1 22.706 3.5l.004.021l1.352 5.906h-1.768l-1.245-5.518a1.77 1.77 0 0 0-.606-.962l-.003-.003a1.64 1.64 0 0 0-1.046-.375h-2.255v.008a.82.82 0 0 1-.254.594a.82.82 0 0 1-.595.254h-5.158a.82.82 0 0 1-.594-.254a.82.82 0 0 1-.254-.595v-.008H8.029a1.64 1.64 0 0 0-1.048.377l.003-.002a1.76 1.76 0 0 0-.603.954l-.002.012z" />
+</svg>
+</h1>
+    
+    <table border="1">
+        <thead>
+            <th>Məhsulun şəkli</th>
+            <th>Məhsulun adı</th>
+            <th>Məhsulun qiyməti</th>
+            <th>Məhsulun sayı</th>
+            <th>Məhsulun ölçüsü</th>
+            <th>Məhsulun kodu <br> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 1200 1200" class="icon">
+                    <path d="M0 0h1200v1200H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M0 99.87v1000.26h100.26V99.87zm186.135 0v1000.26h24.089V99.87zm57.883 0v1000.26h76.219V99.87zm153.658 0v1000.26h32.525V99.87zm118.449 0v1000.26h24.041V99.87zm34.379 0v1000.26h99.626V99.87zm159.411 0v1000.26h50.18V99.87zm149.025 0v1000.26h11.118V99.87zm87.63 0v1000.26h33.501V99.87zm119.376 0v1000.26h24.09V99.87zm34.428 0v1000.26H1200V99.87z" />
+                </svg>
+            </th>
+            <th>Ümumi qiymət</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSzlmeVy9lYKRvHVTWlKQ0JTMcevTTOiiXOijW04Xt5PtUbetZS0r7Vuk&s=10"
+                        alt="">
+                </td>
+                <td>Çörək</td>
+                <td>0.70 AZN</td>
+                <td>8</td>
+                <td>ədəd</td>
+                <td>
+                    <a href="image.png" target="_blank">
+                        PRD-001
+                    </a>
+                </td>
+                <td rowspan="20" id="totalPrice">354.40 AZN </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVc9rKUT6RQBJhsCI8wMlgvaRaIvA2vi27cZF0WWI55mUIOHVXhMwE4PA&s=10"
+                        alt="">
+                </td>
+                <td>Süd</td>
+                <td>2.20 AZN</td>
+                <td>6</td>
+                <td>litr</td>
+                <td>
+                    <a href="image.png" target="_blank">
+                        PRD-002
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZu8_8u4yf6vPqCnPhthfugDfN5AMtM0IxNt-aQffWVJfk0wBG8hmjp5I0&s=10"
+                        alt="">
+                </td>
+                <td>Yumurta</td>
+                <td>3.50 AZN</td>
+                <td>12</td>
+                <td>10 ədəd</td>
+                <td>PRD-003</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://milla.az/_next/image?url=https%3A%2F%2Fapanel.milla.az%2Fuploads%2FMilla_Feta_Pendir_900_qr_f30cc39f57.png&w=2048&q=75"
+                        alt="">
+                </td>
+                <td>Pendir</td>
+                <td>7.50 AZN</td>
+                <td>4</td>
+                <td>kq</td>
+                <td>PRD-004</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://milla.az/_next/image?url=https%3A%2F%2Fapanel.milla.az%2Fuploads%2FMilla_K_r_yagi_1kq_151f7aeafe.jpg&w=3840&q=75"
+                        alt="">
+                </td>
+                <td>Kərə yağı</td>
+                <td>6.80 AZN</td>
+                <td>5</td>
+                <td>200 q</td>
+                <td>PRD-005</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://milla.az/_next/image?url=https%3A%2F%2Fapanel.milla.az%2Fuploads%2FAsset_12_2d9_SD_Dfx_100_6f1f00e332.png&w=3840&q=75"
+                        alt="">
+                </td>
+                <td>Qatıq</td>
+                <td>1.80 AZN</td>
+                <td>7</td>
+                <td>500 q</td>
+                <td>PRD-006</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://strgimgr.umico.az/img/product/280/7afd9d23-cc0b-470b-bfe0-8f86151c5d24.jpeg"
+                        alt="">
+                </td>
+                <td>Makaron</td>
+                <td>1.50 AZN</td>
+                <td>9</td>
+                <td>500 q</td>
+                <td>PRD-007</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDyWFIdt3CCLzetqQE5ff_FqzrhYXzeqnnW_unv_PEbA&s=10"
+                        alt="">
+                </td>
+                <td>Düyü</td>
+                <td>3.20 AZN</td>
+                <td>6</td>
+                <td>kq</td>
+                <td>PRD-008</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://atsfood.az/storage/products/September2024/slider-main/fkecfqkKWOCTOoy8rqke.png"
+                        alt="">
+                </td>
+                <td>Un</td>
+                <td>2.00 AZN</td>
+                <td>5</td>
+                <td>kq</td>
+                <td>PRD-009</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkgf0OXyoTU19K0BQeLnK986MIL0s-w0utIKBdbqz6A&s=10"
+                        alt="">
+                </td>
+                <td>Şəkər</td>
+                <td>2.30 AZN</td>
+                <td>7</td>
+                <td>kq</td>
+                <td>PRD-010</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRPGf3M6sctUxohmtOKo2S4t9QvEuMPzfNOJyB-qjwtgr_hpXwG8e_OjQ&s=10"
+                        alt="">
+                </td>
+                <td>Günəbaxan yağı</td>
+                <td>4.50 AZN</td>
+                <td>4</td>
+                <td>litr</td>
+                <td>PRD-011</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCZvDrJgvwcm7mj3QMYStEv47THfZ6AtO4LoXnjs92Q&s=10"
+                        alt="">
+                </td>
+                <td>Çay</td>
+                <td>4.50 AZN</td>
+                <td>6</td>
+                <td>100 q</td>
+                <td>PRD-012</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4ZomtjL2mZAvt7ZgM5J2B17r0uxo871H_BYxTSBHjw&s=10"
+                        alt="">
+                </td>
+                <td>Qəhvə</td>
+                <td>8.50 AZN</td>
+                <td>3</td>
+                <td>100 q</td>
+                <td>PRD-013</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://balticsupermart.com/cdn/shop/products/113776.jpg?v=1621712145" alt="">
+                </td>
+                <td>Şokolad</td>
+                <td>2.80 AZN</td>
+                <td>10</td>
+                <td>ədəd</td>
+                <td>PRD-014</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKcsYP2qQezA_4q0fIc7n6b-TmX5qr9nO5fMttYtxc1OLpTHa1B9cy-Lw&s=10"
+                        alt="">
+                </td>
+                <td>Biskvit</td>
+                <td>1.90 AZN</td>
+                <td>8</td>
+                <td>paket</td>
+                <td>PRD-015</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnqlOLERbmTnNeOeMyO-tJy0K2Pm7JdtxQuwNcrOFj_OqP6Tw1ZsGE3k&s=10"
+                        alt="">
+                </td>
+                <td>Kartof</td>
+                <td>1.20 AZN</td>
+                <td>7</td>
+                <td>kq</td>
+                <td>PRD-016</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRc1qqDHyvqIJIsfF9R-TTldkP4_oqG3zV1bbnPieHSlGjEaeU0CG7OEV_&s=10"
+                        alt="">
+                </td>
+                <td>Pomidor</td>
+                <td>2.50 AZN</td>
+                <td>5</td>
+                <td>kq</td>
+                <td>PRD-017</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX952QbBtz2dwifzoPmpq9LIkwScOlc5lHTSppqS-T4g&s=10"
+                        alt="">
+                </td>
+                <td>Alma</td>
+                <td>2.00 AZN</td>
+                <td>9</td>
+                <td>kq</td>
+                <td>PRD-018</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTvio0jA8bVBVSFnm1lLwUIB3KEEUhe5wvyh40Ve944w&s=10"
+                        alt="">
+                </td>
+                <td>Portağal şirəsi</td>
+                <td>3.90 AZN</td>
+                <td>4</td>
+                <td>litr</td>
+                <td>PRD-019</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3oNBmiBj79fod07M7Y1TO-q80qbKjFqtQrduSwenEDA&s=10"
+                        alt="">
+                </td>
+                <td>Mineral su</td>
+                <td>1.00 AZN</td>
+                <td>10</td>
+                <td>1.5 litr</td>
+                <td>PRD-020</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

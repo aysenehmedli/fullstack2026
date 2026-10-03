@@ -1,0 +1,38 @@
+body {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background-image: url(./assets/backimg.png);
+}
+.frame{
+    background-color: white;
+    width: 100%;
+    padding-inline:10px ;
+    padding-block:25px;
+}
+button {
+    background-color: white;
+    border: 1px solid white;
+    border-bottom: 2px solid red;
+    border-radius: 60% 60%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 3px 8px 8px 0px rgb(224, 124, 124);
+    cursor: pointer;
+}
+
+i {
+    color: rgb(209, 204, 204);
+}
+
+i:hover {
+    color: red;
+}
+iframe{
+    width: 480px;
+    height: 230px;
+    border-radius: 10px;
+}
+ 

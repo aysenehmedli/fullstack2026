@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Parallax bölməsi */
+.parallax {
+    height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+                url("https://images.pexels.com/photos/39297710/pexels-photo-39297710.png");
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+  background-blend-mode: luminosity;
+
+
+}
+
+
+
+/* Yazı */
+.text {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+.text h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 22px;
+}
+
+.content {
+    min-height: 500px;
+    padding: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.content p {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.second {
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.boxs {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.boxs .box {
+    width: 200px;
+    height: 250px;
+    background-color: rgb(3, 242, 226);
+    color: rgb(255, 251, 251);
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}

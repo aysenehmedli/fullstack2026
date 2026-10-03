@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    img {
+        width: 200px;
+        height: 100px;
+        margin-right: -50px;
+    }
+
+    .logo-text {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 27%;
+        color: #FF003D;
+    }
+}
+
+.name {
+    font-family: Poppins;
+    color: #FF2B51;
+
+    .light {
+        display: block;
+        text-align: right;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .bold {
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 61vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 34%;
+        height: 70%;
+        position: absolute;
+        top: 60px;
+
+    }
+
+    .person {
+        z-index: 30;
+        top: -20px;
+        left: 400px;
+        width: 36%;
+        height: 75%;
+    }
+
+    .ellipse {
+        z-index: 20;
+    }
+
+    .shadow {
+        z-index: -10;
+        width: 42%;
+        height: 86%;
+        top: -3px;
+        left: 440px;
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 40px 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: Poppins;
+
+
+    .right {
+        i {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        i:nth-child(1) {
+            color: #E40037;
+
+        }
+
+        i:nth-child(3) {
+            color: #E40037;
+
+        }
+    }
+
+    .heading {
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .other {
+        color: #C0C0C0;
+
+        span {
+            color: #FF2B51;
+            font-weight: 700;
+        }
+    }
+}

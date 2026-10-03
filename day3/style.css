@@ -1,0 +1,45 @@
+body { 
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    margin: auto    ;
+    padding: auto;
+}
+
+h1,h2{
+    color: brown;
+    background-color: antiquewhite;
+}
+
+
+img {
+    width: 200px;
+   
+}
+
+.heart {
+    color: rgb(219, 146, 151);
+}
+
+.heart:hover {
+    color: red;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom:30px ;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}

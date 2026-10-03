@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 33, 33);
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.navbar input {
+    background-color: black;
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.navbar button {
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid rgb(3, 105, 3);
+    color: rgb(3, 117, 3);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.navbar p {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 9vh;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.end {
+    display: flex;
+    gap: 10px;
+}
