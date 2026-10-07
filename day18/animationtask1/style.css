@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lines {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 1s linear infinite;
+
+}
+
+.lines:hover {
+    animation: rotate-reverse 1s linear infinite;
+    /* animation-play-state: paused; */
+}
+
+.line1 {
+    position: relative;
+    width: 20px;
+    height: 400px;
+    background-color: rgb(74, 74, 228);
+    z-index: 3;
+}
+
+
+.line2 {
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+    height: 20px;
+    background-color: pink;
+    /* animation: rotate 1s linear infinite ; */
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}

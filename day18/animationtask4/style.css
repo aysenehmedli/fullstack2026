@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+p{
+    font-size: 18px;
+    animation: opacity 1s infinite linear alternate;
+}
+
+.btns {
+    display: flex;
+    gap: 12px;
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color: grey;
+    }
+}
+.btn-1{
+    animation: btn1 0.8s infinite linear alternate;
+    animation-delay: 0s;
+}
+.btn-2{
+    animation: btn2 0.8s infinite linear alternate;
+    animation-delay: 0.2s;
+
+}
+.btn-3{
+    
+    animation: btn3 0.8s infinite linear alternate;
+    animation-delay: 0.4s;
+
+}
+@keyframes btn1{
+    0%{
+        transform: translateY(10px);
+        transform: scale(0.5);
+
+    }
+    100%{
+        transform: translateY(-10px);
+        transform: scale(2);
+        
+    }
+}
+@keyframes btn2{
+    0%{
+        transform: translateY(10px);
+          transform: scale(0.5);
+    }
+
+    100%{
+        transform: translateY(-10px);
+        transform: scale(2);
+    }
+}@keyframes btn3{
+    0%{
+        transform: translateY(10px);
+          transform: scale(0.5);
+    }
+    100%{
+        transform: translateY(-10px);
+        transform: scale(2);
+
+    }
+}
+@keyframes opacity{
+    0%{
+        font-size: 18px;
+        opacity: 0.8;
+    }
+    20%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 0.5;
+
+    }
+    80%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+    }
+}
