@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+table{
+    width: 80%;
+    height: 50vh;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+thead tr{
+    background-color: rgb(70, 183, 70);
+    color: #fff;
+    margin: -1px;
+    th{
+        padding: 10px;
+    }
+}
+td{
+    padding: 10px;
+   
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(216, 216, 216);
+}
